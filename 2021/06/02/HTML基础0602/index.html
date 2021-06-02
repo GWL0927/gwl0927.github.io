@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTML基础0602-表单 | GWL's Blog</title><meta name="keywords" content="HTML"><meta name="author" content="郭威龙"><meta name="copyright" content="郭威龙"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&lt;form&gt;元素HTML &lt;form&gt; 元素的常用属性  action 属性定义提交表单时要执行的操作 通常，当用户单击“提交”按钮时，表单数据将发送到服务器上的文件中 在下面的例子中，表单数据被发送到名为 “action_page.php” 的文件 1234567&lt;form action&#x3D;&quot;&#x2F;action_page.php&quot;&gt;  &lt;l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基础0602-表单">
+<meta property="og:url" content="http://example.com/2021/06/02/HTML%E5%9F%BA%E7%A1%800602/index.html">
+<meta property="og:site_name" content="GWL&#39;s Blog">
+<meta property="og:description" content="&lt;form&gt;元素HTML &lt;form&gt; 元素的常用属性  action 属性定义提交表单时要执行的操作 通常，当用户单击“提交”按钮时，表单数据将发送到服务器上的文件中 在下面的例子中，表单数据被发送到名为 “action_page.php” 的文件 1234567&lt;form action&#x3D;&quot;&#x2F;action_page.php&quot;&gt;  &lt;l">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://z3.ax1x.com/2021/06/02/2MQNgP.png">
+<meta property="article:published_time" content="2021-06-02T08:40:05.000Z">
+<meta property="article:modified_time" content="2021-06-02T08:41:02.381Z">
+<meta property="article:author" content="郭威龙">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z3.ax1x.com/2021/06/02/2MQNgP.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/06/02/HTML%E5%9F%BA%E7%A1%800602/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HTML基础0602-表单',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-06-02 16:41:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/TimCook.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://z3.ax1x.com/2021/06/02/2MQNgP.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">GWL's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTML基础0602-表单</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-02T08:40:05.000Z" title="发表于 2021-06-02 16:40:05">2021-06-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-02T08:41:02.381Z" title="更新于 2021-06-02 16:41:02">2021-06-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9F%A5%E8%AF%86/">知识</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HTML基础0602-表单"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="lt-form-gt-元素"><a href="#lt-form-gt-元素" class="headerlink" title="&lt;form&gt;元素"></a><code>&lt;form&gt;</code>元素</h1><p><strong>HTML <code>&lt;form&gt;</code> 元素的常用属性</strong></p>
+<ul>
+<li><p><em>action</em> 属性定义提交表单时要执行的操作</p>
+<p>通常，当用户单击“提交”按钮时，表单数据将发送到服务器上的文件中</p>
+<p>在下面的例子中，表单数据被发送到名为 “action_page.php” 的文件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/action_page.php&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;fname&quot;</span>&gt;</span>First name:<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;fname&quot;</span> <span class="attr">name</span>=<span class="string">&quot;fname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Bill&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;lname&quot;</span>&gt;</span>Last name:<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;lname&quot;</span> <span class="attr">name</span>=<span class="string">&quot;lname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Gates&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Submit&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><em>target</em>属性规定提交表单后在何处显示响应</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">_blank</td>
+<td align="left">响应显示在新窗口或选项卡中。</td>
+</tr>
+<tr>
+<td align="left">_self</td>
+<td align="left">响应显示在当前窗口中。</td>
+</tr>
+<tr>
+<td align="left">_parent</td>
+<td align="left">响应显示在父框架中。</td>
+</tr>
+<tr>
+<td align="left">_top</td>
+<td align="left">响应显示在窗口的整个 body 中。</td>
+</tr>
+<tr>
+<td align="left">framename</td>
+<td align="left">响应显示在命名的 iframe 中。</td>
+</tr>
+</tbody></table>
+<p>默认值为 <code>_self</code>，这意味着响应将在当前窗口中打开。</p>
+<p>此处，提交的结果将在新的浏览器标签中打开：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/action_page.php&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><em>method</em>属性指定提交表单数据时要使用的HTTP方法</p>
+<p>表单数据可以作为 URL 变量（使用 <code>method=&quot;get&quot;</code>）</p>
+<p>或作为 HTTP post 事务（使用 <code>method=&quot;post&quot;</code>）发送</p>
+<p>此例在提交表单数据时使用 GET 方法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/action_page.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>此例在提交表单数据时使用 POST 方法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;/action_page.php&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="lt-input-gt-元素"><a href="#lt-input-gt-元素" class="headerlink" title="&lt;input&gt;元素"></a><code>&lt;input&gt;</code>元素</h1><p><code>&lt;input&gt;</code>元素根据不同的 <em>type</em> 属性，可以变化为多种形态</p>
+<h2 id="输入类型"><a href="#输入类型" class="headerlink" title="输入类型"></a>输入类型</h2><ul>
+<li><code>&lt;input type=&quot;text&quot;&gt;</code>定义供文本输入的单行输入字段</li>
+<li><code>&lt;input type=&quot;password&quot;&gt;</code>定义密码字段</li>
+<li><code>&lt;input type=&quot;submit&quot;&gt;</code>定义提交表单数据至表单处理程序的按钮</li>
+<li><code>&lt;input type=&quot;radio&quot;&gt;</code>定义单选按钮</li>
+<li><code>&lt;input type=&quot;checkbox&quot;&gt;</code>定义复选框</li>
+<li><code>&lt;input type=&quot;button&quot;&gt;</code>定义按钮</li>
+</ul>
+<h2 id="H5新增输入类型"><a href="#H5新增输入类型" class="headerlink" title="H5新增输入类型"></a>H5新增输入类型</h2><ul>
+<li><p><code>&lt;input type=&quot;number&quot;&gt;</code>用于应该包含数字值的输入字段</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  Quantity (between 1 and 5):</span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;number&quot;</span> <span class="attr">name</span>=<span class="string">&quot;quantity&quot;</span> <span class="attr">min</span>=<span class="string">&quot;1&quot;</span> <span class="attr">max</span>=<span class="string">&quot;5&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>&lt;input type=&quot;data&quot;&gt;</code>用于应该包含日期的输入字段</p>
+<p>根据浏览器支持，日期选择器会出现输入字段中</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  Birthday:</span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;date&quot;</span> <span class="attr">name</span>=<span class="string">&quot;bday&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">也可以添加限制</span><br><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  Enter a date before 1980-01-01:</span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;date&quot;</span> <span class="attr">name</span>=<span class="string">&quot;bday&quot;</span> <span class="attr">max</span>=<span class="string">&quot;1979-12-31&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">  Enter a date after 2000-01-01:</span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;date&quot;</span> <span class="attr">name</span>=<span class="string">&quot;bday&quot;</span> <span class="attr">min</span>=<span class="string">&quot;2000-01-02&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>&lt;input type=&quot;color&quot;&gt;</code>用于应该包含颜色的输入字段</p>
+<p>根据浏览器支持，颜色选择器会出现输入字段中</p>
+</li>
+<li><p><code>&lt;input type=&quot;range&quot;&gt;</code>用于应该包含一定范围内的值的输入字段</p>
+<p>根据浏览器支持，输入字段能够显示为滑块控件</p>
+</li>
+<li><p><code>&lt;input type=&quot;time&quot;&gt;</code>允许用户选择时间（无时区）</p>
+<p>根据浏览器支持，时间选择器会出现输入字段中</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/html/html_form_input_types.asp">更多输入类型</a></p>
+<h2 id="输入属性"><a href="#输入属性" class="headerlink" title="输入属性"></a>输入属性</h2><ul>
+<li><p><em>name</em>属性</p>
+<p>如果要正确地被提交，每个输入字段必须设置一个 name 属性</p>
+<p>本例只会提交 “Last name” 输入字段：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;action_page.php&quot;</span>&gt;</span></span><br><span class="line">First name:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Mickey&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Last name:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;lastname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Mouse&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Submit&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span> </span><br></pre></td></tr></table></figure></li>
+<li><p><em>value</em> 属性规定输入字段的初始值</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"> First name:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;firstname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;John&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><em>readonly</em> 属性规定输入字段为只读（不能修改）</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"> First name:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;firstname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;John&quot;</span> <span class="attr">readonly</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><em>disabled</em> 属性规定输入字段是禁用的</p>
+<p>被禁用的元素是不可用和不可点击的</p>
+<p>被禁用的元素不会被提交</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"> First name:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;firstname&quot;</span> <span class="attr">value</span>=<span class="string">&quot;John&quot;</span> <span class="attr">disabled</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+
+<h2 id="H5新增输入属性"><a href="#H5新增输入属性" class="headerlink" title="H5新增输入属性"></a>H5新增输入属性</h2><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/tag_input.asp">参考链接</a></p>
+<h1 id="lt-select-gt-元素"><a href="#lt-select-gt-元素" class="headerlink" title="&lt;select&gt;元素"></a><code>&lt;select&gt;</code>元素</h1><p><code>&lt;select&gt;</code>元素定义下拉列表</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;cars&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;volvo&quot;</span>&gt;</span>Volvo<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;saab&quot;</span>&gt;</span>Saab<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;fiat&quot;</span>&gt;</span>Fiat<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;audi&quot;</span>&gt;</span>Audi<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;option&gt;</code>元素定义待选择的选项</p>
+<p>列表通常会把首个选项显示为被选选项</p>
+<p>您能够通过添加 selected 属性来定义预定义选项</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;fiat&quot;</span> <span class="attr">selected</span>&gt;</span>Fiat<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="lt-textarea-gt-元素"><a href="#lt-textarea-gt-元素" class="headerlink" title="&lt;textarea&gt;元素"></a><code>&lt;textarea&gt;</code>元素</h1><p><code>&lt;textarea&gt;</code>元素定义多行输入字段（<em>文本域</em>）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;message&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;10&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;30&quot;</span>&gt;</span></span><br><span class="line">The cat was playing in the garden.</span><br><span class="line"><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="lt-button-gt-元素"><a href="#lt-button-gt-元素" class="headerlink" title="&lt;button&gt; 元素"></a><code>&lt;button&gt;</code> 元素</h1><p><code>&lt;button&gt;</code> 元素定义可点击的按钮</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;alert(&#x27;Hello World!&#x27;)&quot;</span>&gt;</span>Click Me!<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">郭威龙</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2021/06/02/HTML%E5%9F%BA%E7%A1%800602/">http://example.com/2021/06/02/HTML%E5%9F%BA%E7%A1%800602/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">GWL's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTML/">HTML</a></div><div class="post_share"><div class="social-share" data-image="https://z3.ax1x.com/2021/06/02/2MQNgP.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/06/01/HTML%E5%9F%BA%E7%A1%800601/"><img class="next-cover" src="https://z3.ax1x.com/2021/06/02/2MQNgP.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HTML基础0601</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/06/01/HTML基础0601/" title="HTML基础0601"><img class="cover" src="https://z3.ax1x.com/2021/06/02/2MQNgP.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-01</div><div class="title">HTML基础0601</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/TimCook.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">郭威龙</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/GWL0927"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/GWL0927" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1062870384@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#lt-form-gt-%E5%85%83%E7%B4%A0"><span class="toc-number">1.</span> <span class="toc-text">&lt;form&gt;元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lt-input-gt-%E5%85%83%E7%B4%A0"><span class="toc-number">2.</span> <span class="toc-text">&lt;input&gt;元素</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.1.</span> <span class="toc-text">输入类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#H5%E6%96%B0%E5%A2%9E%E8%BE%93%E5%85%A5%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">H5新增输入类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E5%B1%9E%E6%80%A7"><span class="toc-number">2.3.</span> <span class="toc-text">输入属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#H5%E6%96%B0%E5%A2%9E%E8%BE%93%E5%85%A5%E5%B1%9E%E6%80%A7"><span class="toc-number">2.4.</span> <span class="toc-text">H5新增输入属性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lt-select-gt-%E5%85%83%E7%B4%A0"><span class="toc-number">3.</span> <span class="toc-text">&lt;select&gt;元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lt-textarea-gt-%E5%85%83%E7%B4%A0"><span class="toc-number">4.</span> <span class="toc-text">&lt;textarea&gt;元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lt-button-gt-%E5%85%83%E7%B4%A0"><span class="toc-number">5.</span> <span class="toc-text">&lt;button&gt; 元素</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/06/02/HTML%E5%9F%BA%E7%A1%800602/" title="HTML基础0602-表单">HTML基础0602-表单</a><time datetime="2021-06-02T08:40:05.000Z" title="发表于 2021-06-02 16:40:05">2021-06-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/06/01/HTML%E5%9F%BA%E7%A1%800601/" title="HTML基础0601">HTML基础0601</a><time datetime="2021-06-01T08:43:05.000Z" title="发表于 2021-06-01 16:43:05">2021-06-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/12/10/JS%E9%AB%98%E7%BA%A76-%E9%80%92%E5%BD%92%E4%B8%8E%E6%8B%B7%E8%B4%9D/" title="JS高级6-递归与拷贝">JS高级6-递归与拷贝</a><time datetime="2020-12-10T08:41:34.000Z" title="发表于 2020-12-10 16:41:34">2020-12-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/12/09/JS%E9%AB%98%E7%BA%A74-%E5%87%BD%E6%95%B0%E8%BF%9B%E9%98%B6/" title="JS高级4-函数进阶">JS高级4-函数进阶</a><time datetime="2020-12-09T06:36:03.000Z" title="发表于 2020-12-09 14:36:03">2020-12-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/12/09/JS%E9%AB%98%E7%BA%A75-%E9%97%AD%E5%8C%85/" title="JS高级5-闭包">JS高级5-闭包</a><time datetime="2020-12-09T05:25:02.000Z" title="发表于 2020-12-09 13:25:02">2020-12-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 郭威龙</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
